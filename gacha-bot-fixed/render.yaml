@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gacha-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: node main.js
+    plan: free
+    envVars:
+      - key: BOT5_TOKEN
+        sync: false
